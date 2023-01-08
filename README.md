@@ -1,1 +1,1 @@
-# otuschool
+# outschool
