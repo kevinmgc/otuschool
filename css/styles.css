@@ -266,7 +266,7 @@ body {
 /* Section services */
 #services .container h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #services .container > p {
@@ -300,7 +300,15 @@ body {
 
 @media screen and (min-width: 768px) {
     #services .container h2 {
-        text-align: center;
+        font-size: 2em;
+    }
+    #services .container .services-grid .services-col {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #services .container h2 {
         font-size: 2.5em;
     }
     #services .container .services-grid .services-col {
