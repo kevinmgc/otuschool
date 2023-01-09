@@ -22,14 +22,14 @@
             <div class="header-logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
-            <div class="desktop-menu">
+            <nav class="desktop-menu">
                 <ul>
                     <li><a href="#courses">Courses</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="header-icons">
                 <div class="icons">
                     <span class="material-symbols-outlined" id="hover-icons">
@@ -41,11 +41,20 @@
                     </span>
                     <span class="icon-text" id="hover-icons">Cart</span>
                 </div>
-                <div class="menu-responsive">
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </div>
+                <nav class="responsive-menu">
+                    <label for="check">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </label>
+                    <input type="checkbox" name="check" id="check">
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </section>
@@ -77,6 +86,16 @@
                 <img src="img/partners-logo-4.png" alt="Partners logo">
                 <img src="img/partners-logo-5.png" alt="Partners logo">
             </div>
+        </div>
+    </section>
+    <!-- Section services -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2>Our Features and Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Euismod diam phasellus quis aliquet purus sem ornare mollis
+                vulputate. Sapien
+                purus faucibus massa pharetra.</p>
+            <div class="services-grid"></div>
         </div>
     </section>
 </body>
