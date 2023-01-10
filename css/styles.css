@@ -4,6 +4,19 @@
     --white-color: #ffffff;
     --text-color: #464747;
     --gray-color: #eaeaea;
+    --button-color: #ac85ff;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+}
+
+.primary-btn {
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 body {
@@ -156,11 +169,6 @@ body {
     overflow: hidden;
 }
 
-#hero .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
-}
-
 #hero .row .hero-content {
     margin: auto 0;
     padding-top: 60px;
@@ -181,18 +189,11 @@ body {
     max-width: 400px;
 }
 
-#hero .row .hero-content .hero-buttons button {
-    padding: 10px 25px;
-    border-radius: 12px;
-    font-size: 1em;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
 #hero .row .hero-content .hero-buttons .hero-button-1 {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     color: var(--white-color);
+    margin-right: 10px;
 }
 
 #hero .row .hero-content .hero-buttons .hero-button-1:hover {
@@ -270,7 +271,7 @@ body {
 }
 
 #services .container > p {
-    text-align: center;
+    text-align: justify;
     max-width: 700px;
     margin: 0 auto;
     color: var(--text-color);
@@ -279,8 +280,6 @@ body {
 }
 
 #services .container .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
     grid-auto-rows: 220px;
 }
 
@@ -302,6 +301,9 @@ body {
     #services .container h2 {
         font-size: 2em;
     }
+    #services .container > p {
+        text-align: center;
+    }
     #services .container .services-grid .services-col {
         padding: 0 50px;
     }
@@ -313,5 +315,58 @@ body {
     }
     #services .container .services-grid .services-col {
         padding: 0 70px;
+    }
+}
+
+/* Platform section */
+#platform .container .platform-img img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+#platform .container .platform-content {
+    margin: auto 0;
+}
+
+#platform .container .platform-content h2 {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+#platform .container .platform-content p {
+    padding-bottom: 15px;
+}
+
+#platform .container .platform-content button {
+    border: 1px solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--white-color);
+}
+
+#platform .container .platform-content button:hover {
+    transform: translateY(-10px);
+    transition: all 0.6s;
+}
+
+@media screen and (min-width: 768px) {
+    #platform .container .platform-img img {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #platform .container .platform-img img {
+        width: 60%;
+    }
+
+    #platform .container .platform-content h2 {
+        font-size: 2em;
+    }
+
+    #platform .container .platform-content p {
+        max-width: 500px;
+        text-align: justify;
     }
 }
